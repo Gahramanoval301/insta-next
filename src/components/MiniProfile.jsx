@@ -5,7 +5,7 @@ import React from 'react'
 export default function MiniProfile() {
     const { data: session } = useSession()
     return (
-        <div className="flex items-center justify-between mt-14 ml-10 w-full">
+        <div className="flex items-center justify-between mt-14 ml-0 xl:ml-10 w-80 xl:w-full ">
             <img src={session?.user?.image || '/800px-Instagram_logo_2016.webp'}
                 className="w-16 h-16 rounded-full p-[2px]"
                 alt="user profile pic or insta logo" />
