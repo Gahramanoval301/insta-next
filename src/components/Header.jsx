@@ -110,20 +110,18 @@ export default function Header() {
                     />
                 </Link>
 
-                {/* search input */}
 
                 <input
                     type='text'
                     placeholder='Search'
-                    className='bg-gray-50 border border-gray-200 rounded text-sm w-full py-2 px-4 max-w-[210px]'
+                    className='bg-gray-50 border border-gray-200 rounded text-sm py-2 px-4 w-3/5'
                 />
 
-                {/* menu items */}
 
                 {session ? (
                     <div className='flex gap-2 items-center'>
                         <IoMdAddCircleOutline
-                            className='text-2xl cursor-pointer tranform hover:scale-125 transition duration-300 hover:text-red-600'
+                            className='text-2xl cursor-pointer tranform hover:scale-125 transition duration-300 hover:text-pink-500'
                             onClick={() => setIsOpen(true)}
                         />
                         <img
