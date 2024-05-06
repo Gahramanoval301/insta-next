@@ -25,6 +25,11 @@ io.on("connection", (socket) => {
     socket.on("disconnect", () => {
         console.log(`user is disconnected from ${socket.id}`);
     });
+    socket.on('send_like', ({ postId, liked }) => {
+        io.emit('receive_like', { postId, liked });
+    });
+
+
 
 });
 
